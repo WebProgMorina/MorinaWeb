@@ -1,12 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PaketAController;
+use App\Http\Controllers\SiswaPaketAController;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\PaketAController;
-
 Route::resource('paketa', PaketAController::class)->except(['show']);
-
+Route::resource('siswapaketa', SiswaPaketAController::class)->except(['show']);
+ // Changed from 'paketa' to 'siswapaketa'
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,3 +24,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
