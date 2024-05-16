@@ -2,6 +2,7 @@
     <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
         <div class="max-w-xl">
             <h2 class="text-2xl font-semibold mb-4">Student List</h2>
+            <h2>Paket A</h2>
             <table class="table-auto w-full">
                 <thead>
                     <tr>
