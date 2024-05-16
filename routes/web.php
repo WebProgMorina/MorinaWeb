@@ -10,7 +10,10 @@ Route::resource('siswapaketa', SiswaPaketAController::class)->except(['show']);
  // Changed from 'paketa' to 'siswapaketa'
 
 Route::get('/siswapaketa', [SiswaPaketaController::class, 'index'])->name('siswapaketa');
-Route::get('/paketa', [PaketaController::class, 'store'])->name('paketa');
+Route::get('/paketa', [PaketAController::class, 'index'])->name('paketa.index');
+Route::get('/paketa/create', [PaketAController::class, 'create'])->name('paketa.create');
+Route::post('/paketa', [PaketAController::class, 'store'])->name('paketa.store');
+
 
 Route::get('/', function () {
     return view('welcome');

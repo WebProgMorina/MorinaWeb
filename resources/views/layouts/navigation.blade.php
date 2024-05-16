@@ -17,13 +17,8 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('siswapaketa')" :active="request()->routeIs('siswapaketa')">
+                    <x-nav-link :href="route('paketa.index')" :active="request()->routeIs('paketa.index')">
                         {{ __('Paket A') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('paketa')" :active="request()->routeIs('paketa')">
-                        {{ __('Input Paket A') }}
                     </x-nav-link>
                 </div>
             </div> 

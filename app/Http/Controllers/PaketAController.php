@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -6,6 +7,27 @@ use App\Models\Siswapa;
 
 class PaketAController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $students = Siswapa::all();
+        return view('paketa.index', compact('students'));
+    }
+
+    /**
+     * Display the form to create a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('paketa.create');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -39,12 +61,12 @@ class PaketAController extends Controller
         $siswapa->gender = $request->gender;
         $siswapa->kepercayaan = $request->kepercayaan;
         $siswapa->ayah = $request->ayah;
-        $siswapa->Ibu = $request->ibu;
+        $siswapa->ibu = $request->ibu;
         $siswapa->Kelas = $request->Kelas;
         $siswapa->Kota = $request->Kota;
         $siswapa->alamat = $request->alamat;
         $siswapa->phone = $request->phone;
-        
+
         // Save the siswapa
         $siswapa->save();
 
