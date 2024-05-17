@@ -88,6 +88,7 @@
         #info-kontak .text-content {
             text-align: left;
             margin-right: 0;
+            padding-left: 300px;
         }
 
         #info-kontak img {
@@ -99,8 +100,45 @@
         }
 
         #h1-kontak {
-            padding-top: 50px;
+            padding-top: 30px;
             text-align: center;
+        }
+
+        #visit-us {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #visit-us p {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #visit-us h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #visit-us iframe {
+            max-width: 100%;
+            height: 418px;
+            border: 0;
+        }
+
+        #hub-kontak-butt {
+            width: 432px;
+            height: 64px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            background-color: #1C1E53;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        #hub-kontak-butt:hover {
+            background-color: #151741;
         }
     </style>
 </head>
@@ -110,7 +148,7 @@
 
     </div>
     <div class="about-container">
-        <img src="aboutus.png" alt="About Us">
+        <img src="{{ asset('aboutus.png') }}" alt="About Us">
         <div class="text-content">
             <h1>TENTANG KAMI</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in velit metus. Nullam vel leo nec lacus
@@ -146,10 +184,15 @@
                 lacus nisi eu mi. Nulla facilisi. Integer sit amet magna at elit mollis hendrerit. Vestibulum ante
                 ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque ut justo vel sapien
                 interdum congue. Nam sed mauris in neque posuere lobortis.</p>
+            <button id="hub-kontak-butt">HUBUNGI KONTAK</button>
         </div>
-        <img src="aboutus.png" alt="About Us">
+        <img src="om-kisman.png" alt="Om kisman">
     </div>
-
+    <div id="visit-us">
+        <p>VISIT US!</p>
+        <h1>Come and visit us at</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.27567587927!2d106.684515!3d-6.2216111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9877d204d91%3A0x2c372af0b19673d9!2sSekolah%20PKBM%20Morina%20pinang!5e0!3m2!1sen!2sid!4v1715961354007!5m2!1sen!2sid" width="1180" height="418" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </body>
 
 </html>
