@@ -145,7 +145,7 @@
 
 <body>
     <div id="hero">
-
+        <!-- gw gabisa masukin fotonya angjigjiginignigngijgingn -->
     </div>
     <div class="about-container">
         <img src="{{ asset('aboutus.png') }}" alt="About Us">
