@@ -100,3 +100,7 @@
 .table-auto.dark-mode tr:nth-child(even) {
     background-color: #1f2937; /* Alternating row color for dark mode */
 }
+
+.grid{
+    background-color: #151741;
+}
