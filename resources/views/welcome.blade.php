@@ -143,12 +143,13 @@
     </style>
 </head>
 
+
 <body>
     <div id="hero">
         <!-- gw gabisa masukin fotonya angjigjiginignigngijgingn -->
     </div>
     <div class="about-container">
-        <img src="{{ asset('aboutus.png') }}" alt="About Us">
+        <img src="{{ asset('/images/aboutus.png') }}" alt="About Us">
         <div class="text-content">
             <h1>TENTANG KAMI</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in velit metus. Nullam vel leo nec lacus
@@ -163,15 +164,15 @@
         <div id="paket-info">
             <div class="paket-card">
                 <p>Paket A</p>
-                <img src="paket-placeholder.png" />
+                <img src="/images/paket-placeholder.png" />
             </div>
             <div class="paket-card">
                 <p>Paket B</p>
-                <img src="paket-placeholder.png" />
+                <img src="/images/paket-placeholder.png" />
             </div>
             <div class="paket-card">
                 <p>Paket C</p>
-                <img src="paket-placeholder.png" />
+                <img src="/images/paket-placeholder.png" />
             </div>
         </div>
     </div>
@@ -186,7 +187,7 @@
                 interdum congue. Nam sed mauris in neque posuere lobortis.</p>
             <button id="hub-kontak-butt">HUBUNGI KONTAK</button>
         </div>
-        <img src="om-kisman.png" alt="Om kisman">
+        <img src="/images/om-kisman.png" alt="Om kisman">
     </div>
     <div id="visit-us">
         <p>VISIT US!</p>
