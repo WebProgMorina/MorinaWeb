@@ -104,3 +104,22 @@
 .grid{
     background-color: #151741;
 }
+
+#visit-us{
+    background-color: #ffffff;
+    margin: auto;
+}
+#h1-paket{
+    background-color: #FFFFFF;
+    font-size: larger;
+    font-weight: 1000;
+}
+#h1-kontak{
+    background-color: #FFFFFF;
+    font-size: larger;
+    font-weight: 1000;
+}
+
+#paket-info .p{
+    color:#ffffff
+}
