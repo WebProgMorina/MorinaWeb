@@ -2,7 +2,7 @@
 <x-app-layout>
     <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
         <div class="max-w-xl mx-auto">
-            <h2 class="text-2xl font-semibold mb-4">Tambah Data Siswa</h2>
+            <h2 id="h2-data" class="text-2xl font-semibold mb-4">Tambah Data Siswa</h2>
             <form action="{{ route('paketa.store') }}" method="POST" class="form-container">
                 @csrf
                 <div class="form-group">
