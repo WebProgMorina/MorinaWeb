@@ -24,6 +24,7 @@
             flex: 1;
             display: block;
             margin: 0 auto;
+
         }
 
         .text-content {
@@ -136,14 +137,15 @@
         #hub-kontak-butt:hover {
             background-color: #151741;
         }
-        .grid{
+
+        .grid {
             background-color: #151741;
-            height : 50px;
+            height: 50px;
         }
 
-        .grid a{
+        .grid a {
             color: #ffffff;
-            padding : 20px;
+            padding: 20px;
         }
     </style>
 </head>
