@@ -1,7 +1,7 @@
 <!-- resources/views/siswapaketb/index.blade.php -->
 <x-app-layout>
 
-    <div class="table-container p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+    <div class="table-container p-4 sm:p-8 bg-white shadow sm:rounded-lg">
         <div class="max-w-7xl mx-auto"> <!-- Adjusted container width -->
             <div class="centerin-dong">
                     <x-nav-link :href="route('paketb.create')" :active="request()->routeIs('paketb.create')">
