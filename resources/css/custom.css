@@ -1,0 +1,106 @@
+/* public/css/custom.css */
+
+.table-container {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    max-width: 100%; /* Increase maximum width */
+    margin: 0; /* Center the container */
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow-x: auto; /* Add horizontal scroll for overflow */
+}
+
+
+.centerin-dong{
+    display: flex;
+    justify-content: center;
+}
+
+.centerin-dong a{
+    padding:10px;
+    background-color: #374151;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.table-container.dark-mode {
+    background-color: #1f2937; /* Dark background for dark mode */
+}
+
+.table-header {
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 16px;
+    color: #374151; /* Text color for light mode */
+}
+
+.table-header.dark-mode {
+    color: #d1d5db; /* Text color for dark mode */
+}
+
+.table-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #6b7280; /* Secondary text color for light mode */
+}
+
+.table-title.dark-mode {
+    color: #9ca3af; /* Secondary text color for dark mode */
+}
+
+.table-auto {
+    font-size: small;
+    width: auto; /* Ensure the table takes up the full width */
+    border-collapse: collapse;
+    margin: 0 auto;
+    table-layout: auto; /* Fixed table layout */
+}
+
+.table-auto th,
+.table-auto td {
+    border: 1px solid #e5e7eb; /* Light gray border */
+    padding: 8px;
+    text-align: left;
+}
+
+.table-auto th {
+    background-color: #f9fafb; /* Light background for header */
+    color: #374151; /* Text color for header */
+}
+
+.table-auto td {
+    background-color: #ffffff; /* White background for cells */
+    color: #374151; /* Text color for cells */
+}
+
+.table-auto tr:nth-child(even) {
+    background-color: #f3f4f6; /* Alternating row color */
+}
+
+.table-auto.dark-mode th,
+.table-auto.dark-mode td {
+    border-color: #374151; /* Dark gray border */
+}
+
+.table-auto.dark-mode th {
+    background-color: #1f2937; /* Dark background for header */
+    color: #d1d5db; /* Text color for header */
+}
+
+.table-auto.dark-mode td {
+    background-color: #111827; /* Dark background for cells */
+    color: #d1d5db; /* Text color for cells */
+}
+
+.table-auto.dark-mode tr:nth-child(even) {
+    background-color: #1f2937; /* Alternating row color for dark mode */
+}
+
+.grid{
+    background-color: #151741;
+}
