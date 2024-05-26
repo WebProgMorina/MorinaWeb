@@ -230,8 +230,9 @@
 </style>
 
 <body>
+    @include('layouts.navigation')
 
-    <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
+    <!-- <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: var(--1);">
             <div class="container">
                 <img class="me-4" id="logo" src="images/logo.png" alt="" style="width: px; height: auto;">
@@ -288,7 +289,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header>-->
     <!--<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -497,8 +498,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,19,62,1) 33%, rgba
             </div>
         </section>
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2020 Copyright:
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 Copyright:
             <a class="" style="color: white;">Damen.com</a>
         </div>
     </footer>

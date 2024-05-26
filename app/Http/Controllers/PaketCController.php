@@ -53,7 +53,7 @@ class PaketCController extends Controller
         ]);
 
         // Create new siswapb instance
-        $siswapb = new siswapb();
+        $siswapb = new siswapc();
         $siswapb->Induk = $request->Induk;
         $siswapb->Nama = $request->Nama;
         $siswapb->TempatLahir = $request->TempatLahir;

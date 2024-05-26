@@ -52,7 +52,7 @@ class PaketAController extends Controller
             'phone' => 'required|string|max:20',
         ]);
 
-        // Create new siswapa instance
+
         $siswapa = new Siswapa();
         $siswapa->Induk = $request->Induk;
         $siswapa->Nama = $request->Nama;
