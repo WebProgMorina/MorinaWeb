@@ -49,7 +49,7 @@ class PaketAController extends Controller
             'Kelas' => 'required|string|in:I,II,III,IV,V,VI',
             'Kota' => 'required|string|max:100',
             'alamat' => 'required|string',
-            'phone' => 'required|string|max:20',
+            'phone' => 'required|numeric|max:20',
         ]);
 
 
