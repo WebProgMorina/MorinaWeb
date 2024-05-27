@@ -16,35 +16,23 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('paketa.index')" :active="request()->routeIs('paketa.index')">
+                        {{ __('Paket A') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('paketb.index')" :active="request()->routeIs('paketb.index')">
+                        {{ __('Paket B') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('paketc.index')" :active="request()->routeIs('paketc.index')">
+                        {{ __('Paket C') }}
+                    </x-nav-link>
+                </div>
 
-                <!-- Admin Links -->
-                @if(Auth::check() && Auth::user()->role == 'admin')
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                        <x-nav-link :href="route('paketa.index')" :active="request()->routeIs('paketa.index')">
-                            {{ __('Paket A') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                        <x-nav-link :href="route('paketb.index')" :active="request()->routeIs('paketb.index')">
-                            {{ __('Paket B') }}
-                        </x-nav-link>
-                    </div>
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                        <x-nav-link :href="route('paketc.index')" :active="request()->routeIs('paketc.index')">
-                            {{ __('Paket C') }}
-                        </x-nav-link>
-                    </div>
-                @endif
-
-                <!-- Regular User Link -->
-                @if(Auth::check() && Auth::user()->role == 'user')
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                        <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                            {{ __('Library') }}
-                        </x-nav-link>
-                    </div>
-                @endif
-            </div>
+            </div> 
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
@@ -98,26 +86,6 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-
-            <!-- Admin Links -->
-            @if(Auth::check() && Auth::user()->role == 'admin')
-                <x-responsive-nav-link :href="route('paketa.index')" :active="request()->routeIs('paketa.index')">
-                    {{ __('Paket A') }}
-                </x-responsive-nav-link>
-                <x-responsive-nav-link :href="route('paketb.index')" :active="request()->routeIs('paketb.index')">
-                    {{ __('Paket B') }}
-                </x-responsive-nav-link>
-                <x-responsive-nav-link :href="route('paketc.index')" :active="request()->routeIs('paketc.index')">
-                    {{ __('Paket C') }}
-                </x-responsive-nav-link>
-            @endif
-
-            <!-- Regular User Link -->
-            @if(Auth::check() && Auth::user()->role == 'user')
-                <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                    {{ __('Library') }}
-                </x-responsive-nav-link>
-            @endif
         </div>
 
         <!-- Responsive Settings Options -->
