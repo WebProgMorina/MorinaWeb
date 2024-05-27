@@ -104,3 +104,78 @@
 .grid{
     background-color: #151741;
 }
+
+#visit-us{
+    background-color: #ffffff;
+    margin: auto;
+}
+#h1-paket{
+    background-color: #FFFFFF;
+    font-size: larger;
+    font-weight: 1000;
+}
+#h1-kontak{
+    background-color: #FFFFFF;
+    font-size: larger;
+    font-weight: 1000;
+}
+
+#paket-info .p{
+    color:#ffffff
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff; /* Dark mode: #d1d5db */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb; /* Dark mode: #374151 */
+    background-color: #ffffff; /* Dark mode: #1f2937 */
+    color: #374151; /* Dark mode: #d1d5db */
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #6366f1; /* Tailwind indigo-500 */
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2); /* Tailwind indigo-500 */
+}
+
+.submit-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1C1E53;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #151741;
+}
+
+#h2-data {
+    color: #ffffff;
+}

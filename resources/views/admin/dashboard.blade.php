@@ -1,8 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PKBM Morina | Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -24,7 +28,6 @@
             flex: 1;
             display: block;
             margin: 0 auto;
-
         }
 
         .text-content {
@@ -137,27 +140,79 @@
         #hub-kontak-butt:hover {
             background-color: #151741;
         }
-
-        .grid {
+        .grid{
             background-color: #151741;
-            height: 50px;
+            height : 50px;
         }
 
-        .grid a {
+        .grid a{
             color: #ffffff;
-            padding: 20px;
+            padding : 20px;
         }
     </style>
 </head>
 
-<x-app-layout>
+<header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
+                        @if (Route::has('login'))
+                            <nav class="-mx-3 flex flex-1 justify-end">
+                                @auth
+                                    <a
+                                        href="{{ url('/dashboard') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Dashboard
+                                    </a>
+                                    <a
+                                        href="{{ url('/paketa') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Paket A
+                                    </a>
+
+                                    <a
+                                        href="{{ url('/paketb') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Paket B
+                                    </a>
+
+                                    <a
+                                        href="{{ url('/paketc') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Paket C
+                                    </a>
+                                @else
+                                    <a
+                                        href="{{ route('login') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Log in
+                                    </a>
+
+                                    @if (Route::has('register'))
+                                        <a
+                                            href="{{ route('register') }}"
+                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        >
+                                            Register
+                                        </a>
+                                    @endif
+                                @endauth
+                            </nav>
+                        @endif
+                    </header>
+
+
+<body>
+
     <div id="hero">
         <!-- gw gabisa masukin fotonya angjigjiginignigngijgingn -->
     </div>
     <div class="about-container">
         <img src="{{ asset('/images/aboutus.png') }}" alt="About Us">
         <div class="text-content">
-            <h1>TENTANG KAMI</h1>
+            <h1>ADMIN ADMIN ADMIN</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in velit metus. Nullam vel leo nec lacus
                 dignissim imperdiet. Proin luctus, ex id varius dignissim, odio velit rutrum ligula, vel posuere
                 lacus nisi eu mi. Nulla facilisi. Integer sit amet magna at elit mollis hendrerit. Vestibulum ante
@@ -200,4 +255,6 @@
         <h1>Come and visit us at</h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.27567587927!2d106.684515!3d-6.2216111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9877d204d91%3A0x2c372af0b19673d9!2sSekolah%20PKBM%20Morina%20pinang!5e0!3m2!1sen!2sid!4v1715961354007!5m2!1sen!2sid" width="1180" height="418" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-</x-app-layout>
+</body>
+
+</html>
