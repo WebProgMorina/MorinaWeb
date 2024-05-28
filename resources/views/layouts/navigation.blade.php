@@ -14,7 +14,7 @@
                     @auth
                         @if(Auth::user()->role == 'admin')
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="{{ route('admin.dashboard') }}">Dashboard</a>
+                                <a class="nav-link text-white" href="{{ route('dashboard') }}">Dashboard</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{{ route('paketa.index') }}">Paket A</a>
