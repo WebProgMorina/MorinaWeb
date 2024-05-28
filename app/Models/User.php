@@ -44,4 +44,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function isAdmin()
+    {
+       return $this->role === 'admin'; // Assuming 'is_admin' is a boolean column in your users table
+    }
 }
