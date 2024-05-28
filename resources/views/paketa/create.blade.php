@@ -58,11 +58,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="ayah" class="form-label">Nama Ayah:</label>
-                    <input type="text" class="form-control" name="ayah" id="ayah" style="border-radius: 8px;">
+                    <input type="text" class="form-control" name="ayah" id="ayah" required style="border-radius: 8px;">
                 </div>
                 <div class="mb-3">
                     <label for="ibu" class="form-label">Nama Ibu:</label>
-                    <input type="text" class="form-control" name="ibu" id="ibu" style="border-radius: 8px;">
+                    <input type="text" class="form-control" name="ibu" id="ibu" required style="border-radius: 8px;">
                 </div>
                 <div class="mb-3">
                     <label for="Kota" class="form-label">Kota:</label>
@@ -79,7 +79,7 @@
                         style="border-radius: 8px;">
                 </div>
                 <div>
-                    <button class="btn btn-dark " type="submit">Submit</button>
+                    <button id="btn" type="submit">Submit</button>
                 </div>
             </form>
         </div>

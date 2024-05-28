@@ -22,6 +22,16 @@
         background-color: var(--3);
     }
 
+    #btn {
+        border-radius: 5px;
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+        background-color: var(--1);
+        color: var(--4);
+    }
+
     #img-hero {
 
         background-size: cover;

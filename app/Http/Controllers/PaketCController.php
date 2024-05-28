@@ -49,7 +49,7 @@ class PaketCController extends Controller
             'Kelas' => 'required|string|in:X,XI,XII',
             'Kota' => 'required|string|max:100',
             'alamat' => 'required|string',
-            'phone' => 'required|numeric|max:20',
+            'phone' => 'required|string|max:20',
         ]);
 
         // Create new siswapb instance
