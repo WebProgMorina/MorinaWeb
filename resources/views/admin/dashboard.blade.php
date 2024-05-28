@@ -198,6 +198,9 @@
     <div id="visit-us">
         <p>VISIT US!</p>
         <h1>Come and visit us at</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.27567587927!2d106.684515!3d-6.2216111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9877d204d91%3A0x2c372af0b19673d9!2sSekolah%20PKBM%20Morina%20pinang!5e0!3m2!1sen!2sid!4v1715961354007!5m2!1sen!2sid" width="1180" height="418" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.27567587927!2d106.684515!3d-6.2216111!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9877d204d91%3A0x2c372af0b19673d9!2sSekolah%20PKBM%20Morina%20pinang!5e0!3m2!1sen!2sid!4v1715961354007!5m2!1sen!2sid"
+            width="1180" height="418" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </x-app-layout>
