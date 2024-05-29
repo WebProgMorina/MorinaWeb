@@ -25,6 +25,15 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{{ route('paketc.index') }}">Paket C</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('pdf.index') }}">PDF Paket A</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('pdfB.index') }}">PDF Paket B</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('pdfC.index') }}">PDF Paket C</a>
+                            </li>
                         @endif
 
                         @if(Auth::user()->role == 'user')
@@ -34,6 +43,17 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{{ route('dashboard') }}">Library</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('pdf.view') }}">Paket A</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('pdfB.view') }}">Paket B</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="{{ route('pdfC.view') }}">Paket C</a>
+                            </li>
+                            
                         @endif
 
                         <li class="nav-item">
