@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Storage;
 
 class PDFControllerC extends Controller
 {
+    public function view()
+    {
+        $libraries = LibraryC::all();
+        return view('pdfC.view', compact('libraries'));
+    }
     public function index()
     {
         $libraries = LibraryC::all();
@@ -19,14 +24,17 @@ class PDFControllerC extends Controller
     {
         $request->validate([
             'pdf_file' => 'required|mimes:pdf|max:2048',
+            'kode_kelas' => 'required',
         ]);
 
         if ($request->file('pdf_file')->isValid()) {
             $pdfPath = $request->file('pdf_file')->store('pdfs', 'public');
 
+            // Simpan ke basis data bersama dengan kode kelas
             LibraryC::create([
                 'title' => $request->file('pdf_file')->getClientOriginalName(),
                 'file_path' => $pdfPath,
+                'kode_kelas' => $request->kode_kelas, // Simpan kode kelas
             ]);
 
             return redirect()->back()->with('success', 'PDF uploaded successfully.');
@@ -51,6 +59,6 @@ class PDFControllerC extends Controller
 
         $library->delete();
 
-        return redirect()->route('pdfC.index')->with('success', 'PDF deleted successfully.');
+        return redirect()->route('pdfC.view')->with('success', 'PDF deleted successfully.');
     }
 }

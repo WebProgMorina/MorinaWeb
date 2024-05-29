@@ -9,5 +9,10 @@ class Library extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'file_path'];
+    protected $fillable = [
+        'title',
+        'file_path',
+        'kode_kelas', // Tambahkan kode kelas ke fillable
+    ];
+
 }

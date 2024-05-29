@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Storage;
 
 class PDFController extends Controller
 {
+    public function view()
+    {
+        $libraries = Library::all();
+        return view('pdf.view', compact('libraries'));
+    }
     public function index()
     {
         $libraries = Library::all();
@@ -19,14 +24,17 @@ class PDFController extends Controller
     {
         $request->validate([
             'pdf_file' => 'required|mimes:pdf|max:2048',
+            'kode_kelas' => 'required',
         ]);
 
         if ($request->file('pdf_file')->isValid()) {
             $pdfPath = $request->file('pdf_file')->store('pdfs', 'public');
 
+            // Simpan ke basis data bersama dengan kode kelas
             Library::create([
                 'title' => $request->file('pdf_file')->getClientOriginalName(),
                 'file_path' => $pdfPath,
+                'kode_kelas' => $request->kode_kelas, // Simpan kode kelas
             ]);
 
             return redirect()->back()->with('success', 'PDF uploaded successfully.');
@@ -34,13 +42,14 @@ class PDFController extends Controller
 
         return redirect()->back()->with('error', 'Failed to upload PDF.');
     }
-public function show($id)
-{
-    $library = Library::findOrFail($id);
-    $filePath = storage_path('app/public/' . $library->file_path);
 
-    return Response::download($filePath, $library->title);
-}
+    public function show($id)
+    {
+        $library = Library::findOrFail($id);
+        $filePath = storage_path('app/public/' . $library->file_path);
+
+        return Response::download($filePath, $library->title);
+    }
 
     public function destroy($id)
     {
@@ -54,6 +63,6 @@ public function show($id)
         $library->delete();
 
         // Redirect kembali ke halaman PDF setelah berhasil dihapus
-        return redirect()->route('pdf.index')->with('success', 'PDF deleted successfully.');
+        return redirect()->route('pdf.view')->with('success', 'PDF deleted successfully.');
     }
 }

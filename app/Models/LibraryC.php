@@ -14,5 +14,7 @@ class LibraryC extends Model
     protected $fillable = [
         'title',
         'file_path',
+        'kode_kelas', // Tambahkan kode kelas ke fillable
     ];
+
 }
