@@ -67,6 +67,15 @@
                         </li>
                     @else
                         <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('info-a') }}">Paket A</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('info-b') }}">Paket B</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{ route('info-c') }}">Paket C</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-white" href="{{ route('login') }}">Login</a>
                         </li>
                         @if (Route::has('register'))

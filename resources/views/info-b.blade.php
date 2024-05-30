@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paket A - PKBM MORINA</title>
+    <title>Paket B - PKBM MORINA</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 <body>
@@ -22,12 +22,12 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Paket A</h1>
-                <p>Setara SD</p>
+                <p>Setara SMP</p>
             </div>
         </section>
 
         <section class="description">
-            <p>Paket A adalah program pendidikan non-formal yang setara dengan pendidikan dasar (SD) di Indonesia. Program ini dirancang untuk memberikan kesempatan bagi mereka yang tidak dapat menyelesaikan pendidikan dasar melalui jalur formal, seperti anak-anak putus sekolah atau orang dewasa yang belum pernah mengenyam pendidikan dasar.</p>
+            <p>Paket B adalah program pendidikan non-formal yang setara dengan pendidikan dasar (SMP/MTS/Setara) di Indonesia. Program ini dirancang untuk memberikan kesempatan bagi mereka yang tidak dapat menyelesaikan pendidikan dasar melalui jalur formal, seperti anak-anak putus sekolah atau orang dewasa yang belum pernah mengenyam pendidikan dasar.</p>
         </section>
 
         <section class="requirements">

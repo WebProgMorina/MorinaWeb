@@ -14,7 +14,9 @@ use App\Http\Controllers\PageController;
 
 
 
-Route::get('/info-a', [PageController::class, 'showInfoA']);
+Route::get('/info-a', [PageController::class, 'showInfoA'])->name('info-a');
+Route::get('/info-b', [PageController::class, 'showInfoB'])->name('info-b');
+Route::get('/info-c', [PageController::class, 'showInfoC'])->name('info-c');
 
 
 Route::get('/', function () {
