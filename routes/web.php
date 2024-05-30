@@ -10,6 +10,12 @@ use App\Http\Controllers\PaketAController;
 use App\Http\Controllers\PaketBController;
 use App\Http\Controllers\PaketCController;
 use App\Http\Controllers\SiswaPaketAController;
+use App\Http\Controllers\PageController;
+
+
+
+Route::get('/info-a', [PageController::class, 'showInfoA']);
+
 
 Route::get('/', function () {
     return view('welcome');
