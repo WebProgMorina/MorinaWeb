@@ -15,12 +15,12 @@
             <section class="hero">
                 <div class="hero-content">
                     <h1>Paket B</h1>
-                    <p>Setara SD/SDIT</p>
+                    <p>Setara SMP/MTS</p>
                 </div>
             </section>
 
             <section class="description">
-                <p>Paket B adalah program pendidikan non-formal yang setara dengan pendidikan dasar (SD) di Indonesia.
+                <p>Paket B adalah program pendidikan non-formal yang setara dengan pendidikan menengah pertama di Indonesia.
                     Program ini dirancang untuk memberikan kesempatan bagi mereka yang tidak dapat menyelesaikan
                     pendidikan
                     dasar melalui jalur formal, seperti anak-anak putus sekolah atau orang dewasa yang belum pernah
