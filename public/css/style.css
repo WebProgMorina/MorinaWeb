@@ -6,30 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-.header {
-    background-color: #1d1b2f;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.header .logo img {
-    max-height: 50px;
-}
-
-.header .nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.header .nav .logout {
-    background-color: #b88e5b;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
 
 .main-content {
     padding: 20px;
@@ -71,19 +48,3 @@ body {
     margin: 20px 0;
 }
 
-.footer {
-    background-color: #1d1b2f;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-content > div {
-    margin: 10px 0;
-}
