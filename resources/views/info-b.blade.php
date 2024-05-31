@@ -14,16 +14,17 @@
         <main class="main-content">
             <section class="hero">
                 <div class="hero-content">
-                    <h1>Paket A</h1>
-                    <p>Setara SMP</p>
+                    <h1>Paket B</h1>
+                    <p>Setara SD/SDIT</p>
                 </div>
             </section>
 
             <section class="description">
-                <p>Paket B adalah program pendidikan non-formal yang setara dengan pendidikan dasar (SMP/MTS/Setara) di
-                    Indonesia. Program ini dirancang untuk memberikan kesempatan bagi mereka yang tidak dapat
-                    menyelesaikan pendidikan dasar melalui jalur formal, seperti anak-anak putus sekolah atau orang
-                    dewasa yang belum pernah mengenyam pendidikan dasar.</p>
+                <p>Paket B adalah program pendidikan non-formal yang setara dengan pendidikan dasar (SD) di Indonesia.
+                    Program ini dirancang untuk memberikan kesempatan bagi mereka yang tidak dapat menyelesaikan
+                    pendidikan
+                    dasar melalui jalur formal, seperti anak-anak putus sekolah atau orang dewasa yang belum pernah
+                    mengenyam pendidikan dasar.</p>
             </section>
 
             <section class="requirements">
@@ -32,6 +33,7 @@
                     <li>Fotocopy Akte Kelahiran</li>
                     <li>Fotocopy KTP Pribadi atau Orang Tua</li>
                     <li>Fotocopy KK (Kartu Keluarga)</li>
+                    <li>Fotocopy Ijazah SD</li>
                 </ul>
             </section>
 
@@ -41,6 +43,7 @@
                 </div>
             </section>
         </main>
+
 
     </body>
 
