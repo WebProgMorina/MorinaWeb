@@ -373,7 +373,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,19,62,1) 33%, rgba
             </div>
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-4 mb-3">
-                    <h3 class="card-title text-center text-light">Paket A</h3>
+                    <h3 class="card-title text-center text-light" href="{{ route('info-a') }}">Paket A</h3>
                     <img src="/images/paket-placeholder.png" class="card-img-top img-fluid " alt="Paket C">
                 </div>
                 <div class="col-12 col-md-12 col-lg-4 mb-3">
