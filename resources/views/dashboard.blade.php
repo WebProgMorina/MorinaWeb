@@ -119,7 +119,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0 pt-4 text-start">
 
-                        <h3>YAYASAN MORINA</h3>
+                        <h3 class="mb-2 fw-bold ">YAYASAN MORINA</h3>
                         <p>PKBM Morina adalah lembaga pendidikan non-formal di Indonesia yang berfungsi sebagai pusat
                             kegiatan pembelajaran bagi masyarakat. PKBM Morina juga memberikan berbagai layanan
                             pendidikan
@@ -178,7 +178,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,19,62,1) 33%, rgba
                             untuk informasi lebih lanjut tentang program kami atau untuk mendapatkan bantuan dari staf
                             kami yang ramah dan profesional.
                         </p>
-                        <a href="mailto:sekolahmorina1@gmail.com" class="btn text-light mt-4  "
+                        <a href="mailto:sekolahmorina1@gmail.com" class="btn text-light mt-4 mb-4  "
                             style="background-color: #11133E;  ">HUBUNGI
                             KONTAK</a>
                     </div>
