@@ -2,7 +2,7 @@
     <div class="container">
         <img class="me-4" id="logo" src="{{ asset('images/logo.png') }}" alt="" style="width: px; height: auto;">
         <a id="font" class="navbar-brand text-white" href="{{ route('dashboard') }}">PKBM Morina</a>
-        <button style="background-color: white; border: 2px solid var(--3);" class="navbar-toggler btn" type="button"
+        <button style="background-color: white; border: 2px solid var(--3);" class="navbar-toggler" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,6 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{{ route('dashboard') }}">Library</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{{ route('pdf.view') }}">Paket A</a>
                             </li>
@@ -53,7 +52,6 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="{{ route('pdfC.view') }}">Paket C</a>
                             </li>
-                            
                         @endif
 
                         <li class="nav-item">
@@ -89,3 +87,7 @@
         </div>
     </div>
 </nav>
+
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
